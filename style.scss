@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: Poppins, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.swiper {
+  width: 80vw;
+  margin: 0 auto;
+  height: 500px;
+  // border: 1px solid dodgerblue;
+}
+
+.swiper-slide {
+  width: 364px !important;
+  height: 379px !important;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 16px;
+  margin-inline: 0.5rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.5rem;
+  width: 364px;
+  height: 379px;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 12px 25px hsl(0 0% 62% / 0.25);
+  }
+
+  &__img {
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: #2b2b3d;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__price {
+    color: #ff7e00;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  &__info-wrapper {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+  }
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__info-text {
+    color: #858396;
+    font-weight: 500;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.swiper-btn {
+}
