@@ -8,8 +8,14 @@ body {
   align-items: center;
   height: 100vh;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 4rem;
+}
 .swiper {
-  width: 80vw;
+  width: 1170px;
   margin: 0 auto;
   height: 500px;
   // border: 1px solid dodgerblue;
@@ -27,7 +33,6 @@ body {
   align-items: center;
   gap: 28px;
   padding: 16px;
-  margin-inline: 0.5rem;
   border: 1px solid #e3e3e3;
   border-radius: 0.5rem;
   width: 364px;
@@ -42,6 +47,7 @@ body {
     border-radius: 12px;
     width: 100%;
     aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   &__content {
@@ -76,12 +82,29 @@ body {
   &__info-text {
     color: #858396;
     font-weight: 500;
+    font-size: 16px;
   }
   &__icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .swiper-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 12px 25px hsl(0 0% 62% / 0.25);
+  }
+
+  i {
+    color: #848a96;
+  }
 }

@@ -8,6 +8,8 @@ import "swiper/scss/pagination";
 import "swiper/scss/effect-cube";
 import "swiper/bundle";
 
+import "bootstrap-icons/font/bootstrap-icons.scss";
+
 const swiper = new Swiper(".swiper", {
   speed: 300,
   spaceBetween: 0,
@@ -30,13 +32,13 @@ const swiper = new Swiper(".swiper", {
   //   shadowScale: 0,
   // },
   modules: [Navigation, Pagination],
-  loop: true,
+  // loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-btn--next",
+    prevEl: ".swiper-btn--prev",
   },
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -44,9 +46,12 @@ const swiper = new Swiper(".swiper", {
   // createElements: true,
 });
 
-const next = document.querySelector(".swiper-button-next");
+const next = document.querySelector(".swiper-btn--next");
+const prev = document.querySelector(".swiper-btn--prev");
 
 // next.addEventListener("click", () => {
-//   console.log("dd");
+//   swiper.slideNext();
+// });
+// prev.addEventListener("click", () => {
 //   swiper.slideNext();
 // });
